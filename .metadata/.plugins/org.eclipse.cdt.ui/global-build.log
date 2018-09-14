@@ -1,0 +1,483 @@
+21:16:33 **** Clean-only build of configuration Release for project Prueba ****
+make clean 
+rm -rf  ./src/Prueba.o ./src/PruebaMatrices.o  ./src/Prueba.d ./src/PruebaMatrices.d  Prueba
+ 
+21:21:26 **** Build of configuration Release for project Prueba ****
+make all 
+Building file: ../src/Prueba.cpp
+Invoking: Cross G++ Compiler
+g++ -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Prueba.d" -MT"src/Prueba.o" -o "src/Prueba.o" "../src/Prueba.cpp"
+Finished building: ../src/Prueba.cpp
+ 
+Building file: ../src/PruebaMatrices.cpp
+Invoking: Cross G++ Compiler
+g++ -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/PruebaMatrices.d" -MT"src/PruebaMatrices.o" -o "src/PruebaMatrices.o" "../src/PruebaMatrices.cpp"
+../src/PruebaMatrices.cpp: In function ‘int main()’:
+../src/PruebaMatrices.cpp:83:18: warning: unused variable ‘prueba’ [-Wunused-variable]
+  PruebaMatrices *prueba = new PruebaMatrices(matriz1);
+                  ^~~~~~
+Finished building: ../src/PruebaMatrices.cpp
+ 
+Building target: Prueba
+Invoking: Cross G++ Linker
+g++  -o "Prueba"  ./src/Prueba.o ./src/PruebaMatrices.o   
+Finished building target: Prueba
+ 
+21:23:45 **** Incremental Build of configuration Release for project Prueba ****
+make all 
+Building file: ../src/PruebaMatrices.cpp
+Invoking: Cross G++ Compiler
+g++ -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/PruebaMatrices.d" -MT"src/PruebaMatrices.o" -o "src/PruebaMatrices.o" "../src/PruebaMatrices.cpp"
+../src/PruebaMatrices.cpp: In function ‘int main()’:
+../src/PruebaMatrices.cpp:71:18: warning: unused variable ‘prueba’ [-Wunused-variable]
+  PruebaMatrices *prueba = new PruebaMatrices(matriz1);
+                  ^~~~~~
+Finished building: ../src/PruebaMatrices.cpp
+ 
+Building target: Prueba
+Invoking: Cross G++ Linker
+g++  -o "Prueba"  ./src/Prueba.o ./src/PruebaMatrices.o   
+./src/PruebaMatrices.o: In function `PruebaMatrices::PruebaMatrices<int>(boost::numeric::ublas::matrix<int, boost::numeric::ublas::basic_row_major<unsigned long, long>, boost::numeric::ublas::unbounded_array<int, std::allocator<int> > >)':
+PruebaMatrices.cpp:(.text._ZN14PruebaMatricesC2IiEEN5boost7numeric5ublas6matrixIT_NS3_15basic_row_majorImlEENS3_15unbounded_arrayIS5_SaIS5_EEEEE[_ZN14PruebaMatricesC5IiEEN5boost7numeric5ublas6matrixIT_NS3_15basic_row_majorImlEENS3_15unbounded_arrayIS5_SaIS5_EEEEE]+0x16d): undefined reference to `void PruebaMatrices::unpack<int>(boost::numeric::ublas::matrix<int, boost::numeric::ublas::basic_row_major<unsigned long, long>, boost::numeric::ublas::unbounded_array<int, std::allocator<int> > >&, boost::numeric::ublas::matrix<int, boost::numeric::ublas::basic_row_major<unsigned long, long>, boost::numeric::ublas::unbounded_array<int, std::allocator<int> > >&, boost::numeric::ublas::matrix<int, boost::numeric::ublas::basic_row_major<unsigned long, long>, boost::numeric::ublas::unbounded_array<int, std::allocator<int> > >&)'
+collect2: error: ld returned 1 exit status
+make: *** [Prueba] Error 1
+makefile:45: recipe for target 'Prueba' failed
+21:24:00 **** Incremental Build of configuration Release for project Prueba ****
+make all 
+Building file: ../src/PruebaMatrices.cpp
+Invoking: Cross G++ Compiler
+g++ -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/PruebaMatrices.d" -MT"src/PruebaMatrices.o" -o "src/PruebaMatrices.o" "../src/PruebaMatrices.cpp"
+../src/PruebaMatrices.cpp: In function ‘int main()’:
+../src/PruebaMatrices.cpp:71:18: warning: unused variable ‘prueba’ [-Wunused-variable]
+  PruebaMatrices *prueba = new PruebaMatrices(matriz1);
+                  ^~~~~~
+Finished building: ../src/PruebaMatrices.cpp
+ 
+Building target: Prueba
+Invoking: Cross G++ Linker
+g++  -o "Prueba"  ./src/Prueba.o ./src/PruebaMatrices.o   
+Finished building target: Prueba
+ 
+21:25:18 **** Incremental Build of configuration Release for project Prueba ****
+make all 
+Building file: ../src/PruebaMatrices.cpp
+Invoking: Cross G++ Compiler
+g++ -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/PruebaMatrices.d" -MT"src/PruebaMatrices.o" -o "src/PruebaMatrices.o" "../src/PruebaMatrices.cpp"
+../src/PruebaMatrices.cpp: In function ‘int main()’:
+../src/PruebaMatrices.cpp:71:18: warning: unused variable ‘prueba’ [-Wunused-variable]
+  PruebaMatrices *prueba = new PruebaMatrices(matriz1);
+                  ^~~~~~
+Finished building: ../src/PruebaMatrices.cpp
+ 
+Building target: Prueba
+Invoking: Cross G++ Linker
+g++  -o "Prueba"  ./src/Prueba.o ./src/PruebaMatrices.o   
+Finished building target: Prueba
+ 
+21:30:03 **** Incremental Build of configuration Release for project Prueba ****
+make all 
+Building file: ../src/PruebaMatrices.cpp
+Invoking: Cross G++ Compiler
+g++ -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/PruebaMatrices.d" -MT"src/PruebaMatrices.o" -o "src/PruebaMatrices.o" "../src/PruebaMatrices.cpp"
+../src/PruebaMatrices.cpp: In function ‘int main()’:
+../src/PruebaMatrices.cpp:84:18: warning: unused variable ‘prueba’ [-Wunused-variable]
+  PruebaMatrices *prueba = new PruebaMatrices(matriz1);
+                  ^~~~~~
+Finished building: ../src/PruebaMatrices.cpp
+ 
+Building target: Prueba
+Invoking: Cross G++ Linker
+g++  -o "Prueba"  ./src/Prueba.o ./src/PruebaMatrices.o   
+Finished building target: Prueba
+ 
+21:35:27 **** Incremental Build of configuration Release for project Prueba ****
+make all 
+Building file: ../src/PruebaMatrices.cpp
+Invoking: Cross G++ Compiler
+g++ -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/PruebaMatrices.d" -MT"src/PruebaMatrices.o" -o "src/PruebaMatrices.o" "../src/PruebaMatrices.cpp"
+../src/PruebaMatrices.cpp: In function ‘int main()’:
+../src/PruebaMatrices.cpp:84:18: warning: unused variable ‘prueba’ [-Wunused-variable]
+  PruebaMatrices *prueba = new PruebaMatrices(matriz1);
+                  ^~~~~~
+Finished building: ../src/PruebaMatrices.cpp
+ 
+Building target: Prueba
+Invoking: Cross G++ Linker
+g++  -o "Prueba"  ./src/Prueba.o ./src/PruebaMatrices.o   
+Finished building target: Prueba
+ 
+21:35:33 **** Incremental Build of configuration Release for project Prueba ****
+make all 
+make: Nothing to be done for 'all'.
+21:48:00 **** Incremental Build of configuration Release for project Prueba ****
+make all 
+Building file: ../src/PruebaMatrices.cpp
+Invoking: Cross G++ Compiler
+g++ -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/PruebaMatrices.d" -MT"src/PruebaMatrices.o" -o "src/PruebaMatrices.o" "../src/PruebaMatrices.cpp"
+../src/PruebaMatrices.cpp: In function ‘int main()’:
+../src/PruebaMatrices.cpp:100:18: warning: unused variable ‘prueba’ [-Wunused-variable]
+  PruebaMatrices *prueba = new PruebaMatrices(matriz);
+                  ^~~~~~
+Finished building: ../src/PruebaMatrices.cpp
+ 
+Building target: Prueba
+Invoking: Cross G++ Linker
+g++  -o "Prueba"  ./src/Prueba.o ./src/PruebaMatrices.o   
+Finished building target: Prueba
+ 
+21:48:07 **** Incremental Build of configuration Release for project Prueba ****
+make all 
+make: Nothing to be done for 'all'.
+00:59:00 **** Incremental Build of configuration Release for project Prueba ****
+make all 
+Building file: ../src/PruebaMatrices.cpp
+Invoking: Cross G++ Compiler
+g++ -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/PruebaMatrices.d" -MT"src/PruebaMatrices.o" -o "src/PruebaMatrices.o" "../src/PruebaMatrices.cpp"
+../src/PruebaMatrices.cpp: In function ‘int main()’:
+../src/PruebaMatrices.cpp:100:18: warning: unused variable ‘prueba’ [-Wunused-variable]
+  PruebaMatrices *prueba = new PruebaMatrices(matriz);
+                  ^~~~~~
+Finished building: ../src/PruebaMatrices.cpp
+ 
+Building target: Prueba
+Invoking: Cross G++ Linker
+g++  -o "Prueba"  ./src/Prueba.o ./src/PruebaMatrices.o   
+Finished building target: Prueba
+ 
+00:59:06 **** Incremental Build of configuration Release for project Prueba ****
+make all 
+make: Nothing to be done for 'all'.
+00:59:39 **** Incremental Build of configuration Release for project Prueba ****
+make all 
+Building file: ../src/PruebaMatrices.cpp
+Invoking: Cross G++ Compiler
+g++ -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/PruebaMatrices.d" -MT"src/PruebaMatrices.o" -o "src/PruebaMatrices.o" "../src/PruebaMatrices.cpp"
+../src/PruebaMatrices.cpp: In function ‘int main()’:
+../src/PruebaMatrices.cpp:102:18: warning: unused variable ‘prueba’ [-Wunused-variable]
+  PruebaMatrices *prueba = new PruebaMatrices(matriz);
+                  ^~~~~~
+Finished building: ../src/PruebaMatrices.cpp
+ 
+Building target: Prueba
+Invoking: Cross G++ Linker
+g++  -o "Prueba"  ./src/Prueba.o ./src/PruebaMatrices.o   
+Finished building target: Prueba
+ 
+00:59:46 **** Incremental Build of configuration Release for project Prueba ****
+make all 
+make: Nothing to be done for 'all'.
+01:00:41 **** Incremental Build of configuration Release for project Prueba ****
+make all 
+Building file: ../src/PruebaMatrices.cpp
+Invoking: Cross G++ Compiler
+g++ -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/PruebaMatrices.d" -MT"src/PruebaMatrices.o" -o "src/PruebaMatrices.o" "../src/PruebaMatrices.cpp"
+../src/PruebaMatrices.cpp: In function ‘int main()’:
+../src/PruebaMatrices.cpp:104:18: warning: unused variable ‘prueba’ [-Wunused-variable]
+  PruebaMatrices *prueba = new PruebaMatrices(matriz);
+                  ^~~~~~
+Finished building: ../src/PruebaMatrices.cpp
+ 
+Building target: Prueba
+Invoking: Cross G++ Linker
+g++  -o "Prueba"  ./src/Prueba.o ./src/PruebaMatrices.o   
+Finished building target: Prueba
+ 
+01:00:48 **** Incremental Build of configuration Release for project Prueba ****
+make all 
+make: Nothing to be done for 'all'.
+15:57:40 **** Incremental Build of configuration Release for project Prueba ****
+make all 
+Building file: ../src/PruebaMatrices.cpp
+Invoking: Cross G++ Compiler
+g++ -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/PruebaMatrices.d" -MT"src/PruebaMatrices.o" -o "src/PruebaMatrices.o" "../src/PruebaMatrices.cpp"
+../src/PruebaMatrices.cpp: In function ‘int main()’:
+../src/PruebaMatrices.cpp:132:18: warning: unused variable ‘prueba’ [-Wunused-variable]
+  PruebaMatrices *prueba = new PruebaMatrices(matriz);
+                  ^~~~~~
+../src/PruebaMatrices.cpp: In instantiation of ‘PruebaMatrices::PruebaMatrices(boost::numeric::ublas::matrix<T>) [with T = int]’:
+../src/PruebaMatrices.cpp:132:52:   required from here
+../src/PruebaMatrices.cpp:38:19: error: no match for ‘operator*’ (operand types are ‘boost::numeric::ublas::matrix<int>’ and ‘boost::numeric::ublas::matrix<int>’)
+   matriz2 = matriz*matriz2;
+             ~~~~~~^~~~~~~~
+In file included from /usr/include/boost/numeric/ublas/matrix.hpp:19:0,
+                 from ../src/PruebaMatrices.h:20,
+                 from ../src/PruebaMatrices.cpp:8:
+/usr/include/boost/numeric/ublas/matrix_expression.hpp:3940:5: note: candidate: template<class E1, class T2> typename boost::enable_if<boost::is_convertible<T2, typename E1::value_type>, typename boost::numeric::ublas::matrix_binary_scalar2_traits<E1, const T2, boost::numeric::ublas::scalar_multiplies<typename E1::value_type, T2> >::result_type>::type boost::numeric::ublas::operator*(const boost::numeric::ublas::matrix_expression<E>&, const T2&)
+     operator * (const matrix_expression<E1> &e1,
+     ^~~~~~~~
+/usr/include/boost/numeric/ublas/matrix_expression.hpp:3940:5: note:   template argument deduction/substitution failed:
+/usr/include/boost/numeric/ublas/matrix_expression.hpp: In substitution of ‘template<class E1, class T2> typename boost::enable_if<boost::is_convertible<T2, typename E1::value_type>, typename boost::numeric::ublas::matrix_binary_scalar2_traits<E1, const T2, boost::numeric::ublas::scalar_multiplies<typename E1::value_type, T2> >::result_type>::type boost::numeric::ublas::operator*(const boost::numeric::ublas::matrix_expression<E>&, const T2&) [with E1 = boost::numeric::ublas::matrix<int>; T2 = boost::numeric::ublas::matrix<int>]’:
+../src/PruebaMatrices.cpp:38:19:   required from ‘PruebaMatrices::PruebaMatrices(boost::numeric::ublas::matrix<T>) [with T = int]’
+../src/PruebaMatrices.cpp:132:52:   required from here
+/usr/include/boost/numeric/ublas/matrix_expression.hpp:3940:5: error: no type named ‘type’ in ‘struct boost::enable_if<boost::is_convertible<boost::numeric::ublas::matrix<int>, int>, boost::numeric::ublas::matrix_binary_scalar2<boost::numeric::ublas::matrix<int>, const boost::numeric::ublas::matrix<int>, boost::numeric::ublas::scalar_multiplies<int, boost::numeric::ublas::matrix<int> > > >’
+../src/PruebaMatrices.cpp: In instantiation of ‘PruebaMatrices::PruebaMatrices(boost::numeric::ublas::matrix<T>) [with T = int]’:
+../src/PruebaMatrices.cpp:132:52:   required from here
+/usr/include/boost/numeric/ublas/matrix_expression.hpp:3417:5: note: candidate: template<class T1, class E2> typename boost::enable_if<boost::is_convertible<T1, typename E2::value_type>, typename boost::numeric::ublas::matrix_binary_scalar1_traits<const T1, E2, boost::numeric::ublas::scalar_multiplies<T1, typename E2::value_type> >::result_type>::type boost::numeric::ublas::operator*(const T1&, const boost::numeric::ublas::matrix_expression<E2>&)
+     operator * (const T1 &e1,
+     ^~~~~~~~
+/usr/include/boost/numeric/ublas/matrix_expression.hpp:3417:5: note:   template argument deduction/substitution failed:
+/usr/include/boost/numeric/ublas/matrix_expression.hpp: In substitution of ‘template<class T1, class E2> typename boost::enable_if<boost::is_convertible<T1, typename E2::value_type>, typename boost::numeric::ublas::matrix_binary_scalar1_traits<const T1, E2, boost::numeric::ublas::scalar_multiplies<T1, typename E2::value_type> >::result_type>::type boost::numeric::ublas::operator*(const T1&, const boost::numeric::ublas::matrix_expression<E2>&) [with T1 = boost::numeric::ublas::matrix<int>; E2 = boost::numeric::ublas::matrix<int>]’:
+../src/PruebaMatrices.cpp:38:19:   required from ‘PruebaMatrices::PruebaMatrices(boost::numeric::ublas::matrix<T>) [with T = int]’
+../src/PruebaMatrices.cpp:132:52:   required from here
+/usr/include/boost/numeric/ublas/matrix_expression.hpp:3417:5: error: no type named ‘type’ in ‘struct boost::enable_if<boost::is_convertible<boost::numeric::ublas::matrix<int>, int>, boost::numeric::ublas::matrix_binary_scalar1<const boost::numeric::ublas::matrix<int>, boost::numeric::ublas::matrix<int>, boost::numeric::ublas::scalar_multiplies<boost::numeric::ublas::matrix<int>, int> > >’
+In file included from /usr/include/boost/numeric/ublas/vector.hpp:22:0,
+                 from /usr/include/boost/numeric/ublas/matrix.hpp:18,
+                 from ../src/PruebaMatrices.h:20,
+                 from ../src/PruebaMatrices.cpp:8:
+../src/PruebaMatrices.cpp: In instantiation of ‘PruebaMatrices::PruebaMatrices(boost::numeric::ublas::matrix<T>) [with T = int]’:
+../src/PruebaMatrices.cpp:132:52:   required from here
+/usr/include/boost/numeric/ublas/vector_expression.hpp:1484:5: note: candidate: template<class E1, class T2> typename boost::enable_if<boost::is_convertible<T2, typename E1::value_type>, typename boost::numeric::ublas::vector_binary_scalar2_traits<E1, const T2, boost::numeric::ublas::scalar_multiplies<typename E1::value_type, T2> >::result_type>::type boost::numeric::ublas::operator*(const boost::numeric::ublas::vector_expression<E>&, const T2&)
+     operator * (const vector_expression<E1> &e1,
+     ^~~~~~~~
+/usr/include/boost/numeric/ublas/vector_expression.hpp:1484:5: note:   template argument deduction/substitution failed:
+../src/PruebaMatrices.cpp:38:19: note:   ‘boost::numeric::ublas::matrix<int>’ is not derived from ‘const boost::numeric::ublas::vector_expression<E>’
+   matriz2 = matriz*matriz2;
+             ~~~~~~^~~~~~~~
+In file included from /usr/include/boost/numeric/ublas/vector.hpp:22:0,
+                 from /usr/include/boost/numeric/ublas/matrix.hpp:18,
+                 from ../src/PruebaMatrices.h:20,
+                 from ../src/PruebaMatrices.cpp:8:
+/usr/include/boost/numeric/ublas/vector_expression.hpp:1241:5: note: candidate: template<class T1, class E2> typename boost::enable_if<boost::is_convertible<T1, typename E2::value_type>, typename boost::numeric::ublas::vector_binary_scalar1_traits<const T1, E2, boost::numeric::ublas::scalar_multiplies<T1, typename E2::value_type> >::result_type>::type boost::numeric::ublas::operator*(const T1&, const boost::numeric::ublas::vector_expression<E2>&)
+     operator * (const T1 &e1,
+     ^~~~~~~~
+/usr/include/boost/numeric/ublas/vector_expression.hpp:1241:5: note:   template argument deduction/substitution failed:
+../src/PruebaMatrices.cpp:38:19: note:   ‘boost::numeric::ublas::matrix<int>’ is not derived from ‘const boost::numeric::ublas::vector_expression<E2>’
+   matriz2 = matriz*matriz2;
+             ~~~~~~^~~~~~~~
+In file included from /usr/include/boost/numeric/ublas/storage.hpp:26:0,
+                 from /usr/include/boost/numeric/ublas/vector.hpp:21,
+                 from /usr/include/boost/numeric/ublas/matrix.hpp:18,
+                 from ../src/PruebaMatrices.h:20,
+                 from ../src/PruebaMatrices.cpp:8:
+/usr/include/boost/numeric/ublas/traits.hpp:119:38: note: candidate: template<class R, class I> typename boost::enable_if<boost::mpl::and_<boost::is_float<Source>, boost::is_integral<I> >, std::complex<_Tp> >::type boost::numeric::ublas::operator*(const std::complex<_Tp>&, I)
+       std::complex<R> >::type inline operator* (std::complex<R> const& in1, I in2) {
+                                      ^~~~~~~~
+/usr/include/boost/numeric/ublas/traits.hpp:119:38: note:   template argument deduction/substitution failed:
+../src/PruebaMatrices.cpp:38:19: note:   ‘boost::numeric::ublas::matrix<int>’ is not derived from ‘const std::complex<_Tp>’
+   matriz2 = matriz*matriz2;
+             ~~~~~~^~~~~~~~
+In file included from /usr/include/boost/numeric/ublas/storage.hpp:26:0,
+                 from /usr/include/boost/numeric/ublas/vector.hpp:21,
+                 from /usr/include/boost/numeric/ublas/matrix.hpp:18,
+                 from ../src/PruebaMatrices.h:20,
+                 from ../src/PruebaMatrices.cpp:8:
+/usr/include/boost/numeric/ublas/traits.hpp:109:38: note: candidate: template<class R, class I> typename boost::enable_if<boost::mpl::and_<boost::is_float<Source>, boost::is_integral<I> >, std::complex<_Tp> >::type boost::numeric::ublas::operator*(I, const std::complex<_Tp>&)
+       std::complex<R> >::type inline operator* (I in1, std::complex<R> const& in2) {
+                                      ^~~~~~~~
+/usr/include/boost/numeric/ublas/traits.hpp:109:38: note:   template argument deduction/substitution failed:
+../src/PruebaMatrices.cpp:38:19: note:   ‘boost::numeric::ublas::matrix<int>’ is not derived from ‘const std::complex<_Tp>’
+   matriz2 = matriz*matriz2;
+             ~~~~~~^~~~~~~~
+In file included from ../src/PruebaMatrices.h:13:0,
+                 from ../src/PruebaMatrices.cpp:8:
+/usr/include/c++/7/complex:404:5: note: candidate: template<class _Tp> std::complex<_Tp> std::operator*(const _Tp&, const std::complex<_Tp>&)
+     operator*(const _Tp& __x, const complex<_Tp>& __y)
+     ^~~~~~~~
+/usr/include/c++/7/complex:404:5: note:   template argument deduction/substitution failed:
+../src/PruebaMatrices.cpp:38:19: note:   ‘boost::numeric::ublas::matrix<int>’ is not derived from ‘const std::complex<_Tp>’
+   matriz2 = matriz*matriz2;
+             ~~~~~~^~~~~~~~
+In file included from ../src/PruebaMatrices.h:13:0,
+                 from ../src/PruebaMatrices.cpp:8:
+/usr/include/c++/7/complex:395:5: note: candidate: template<class _Tp> std::complex<_Tp> std::operator*(const std::complex<_Tp>&, const _Tp&)
+     operator*(const complex<_Tp>& __x, const _Tp& __y)
+     ^~~~~~~~
+/usr/include/c++/7/complex:395:5: note:   template argument deduction/substitution failed:
+../src/PruebaMatrices.cpp:38:19: note:   ‘boost::numeric::ublas::matrix<int>’ is not derived from ‘const std::complex<_Tp>’
+   matriz2 = matriz*matriz2;
+             ~~~~~~^~~~~~~~
+In file included from ../src/PruebaMatrices.h:13:0,
+                 from ../src/PruebaMatrices.cpp:8:
+/usr/include/c++/7/complex:386:5: note: candidate: template<class _Tp> std::complex<_Tp> std::operator*(const std::complex<_Tp>&, const std::complex<_Tp>&)
+     operator*(const complex<_Tp>& __x, const complex<_Tp>& __y)
+     ^~~~~~~~
+/usr/include/c++/7/complex:386:5: note:   template argument deduction/substitution failed:
+../src/PruebaMatrices.cpp:38:19: note:   ‘boost::numeric::ublas::matrix<int>’ is not derived from ‘const std::complex<_Tp>’
+   matriz2 = matriz*matriz2;
+             ~~~~~~^~~~~~~~
+make: *** [src/PruebaMatrices.o] Error 1
+src/subdir.mk:21: recipe for target 'src/PruebaMatrices.o' failed
+16:09:35 **** Incremental Build of configuration Release for project Prueba ****
+make all 
+Building file: ../src/PruebaMatrices.cpp
+Invoking: Cross G++ Compiler
+g++ -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/PruebaMatrices.d" -MT"src/PruebaMatrices.o" -o "src/PruebaMatrices.o" "../src/PruebaMatrices.cpp"
+../src/PruebaMatrices.cpp: In function ‘int main()’:
+../src/PruebaMatrices.cpp:131:18: warning: unused variable ‘prueba’ [-Wunused-variable]
+  PruebaMatrices *prueba = new PruebaMatrices(matriz);
+                  ^~~~~~
+Finished building: ../src/PruebaMatrices.cpp
+ 
+Building target: Prueba
+Invoking: Cross G++ Linker
+g++  -o "Prueba"  ./src/Prueba.o ./src/PruebaMatrices.o   
+Finished building target: Prueba
+ 
+16:09:44 **** Incremental Build of configuration Release for project Prueba ****
+make all 
+make: Nothing to be done for 'all'.
+16:10:09 **** Incremental Build of configuration Release for project Prueba ****
+make all 
+Building file: ../src/PruebaMatrices.cpp
+Invoking: Cross G++ Compiler
+g++ -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/PruebaMatrices.d" -MT"src/PruebaMatrices.o" -o "src/PruebaMatrices.o" "../src/PruebaMatrices.cpp"
+../src/PruebaMatrices.cpp: In function ‘int main()’:
+../src/PruebaMatrices.cpp:131:18: warning: unused variable ‘prueba’ [-Wunused-variable]
+  PruebaMatrices *prueba = new PruebaMatrices(matriz);
+                  ^~~~~~
+Finished building: ../src/PruebaMatrices.cpp
+ 
+Building target: Prueba
+Invoking: Cross G++ Linker
+g++  -o "Prueba"  ./src/Prueba.o ./src/PruebaMatrices.o   
+Finished building target: Prueba
+ 
+16:10:15 **** Incremental Build of configuration Release for project Prueba ****
+make all 
+make: Nothing to be done for 'all'.
+16:40:08 **** Incremental Build of configuration Release for project Prueba ****
+make all 
+Building file: ../src/PruebaMatrices.cpp
+Invoking: Cross G++ Compiler
+g++ -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/PruebaMatrices.d" -MT"src/PruebaMatrices.o" -o "src/PruebaMatrices.o" "../src/PruebaMatrices.cpp"
+../src/PruebaMatrices.cpp:47:24: error: ‘PruebaMatices’ has not been declared
+ template<class T> bool PruebaMatices::esSingular(pablo::matrix<T>& matriz){
+                        ^~~~~~~~~~~~~
+../src/PruebaMatrices.cpp: In function ‘int main()’:
+../src/PruebaMatrices.cpp:144:18: warning: unused variable ‘prueba’ [-Wunused-variable]
+  PruebaMatrices *prueba = new PruebaMatrices(matriz);
+                  ^~~~~~
+src/subdir.mk:21: recipe for target 'src/PruebaMatrices.o' failed
+make: *** [src/PruebaMatrices.o] Error 1
+16:40:32 **** Incremental Build of configuration Release for project Prueba ****
+make all 
+Building file: ../src/PruebaMatrices.cpp
+Invoking: Cross G++ Compiler
+g++ -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/PruebaMatrices.d" -MT"src/PruebaMatrices.o" -o "src/PruebaMatrices.o" "../src/PruebaMatrices.cpp"
+../src/PruebaMatrices.cpp:47:24: error: prototype for ‘bool PruebaMatrices::esSingular(boost::numeric::ublas::matrix<T>&)’ does not match any in class ‘PruebaMatrices’
+ template<class T> bool PruebaMatrices::esSingular(pablo::matrix<T>& matriz){
+                        ^~~~~~~~~~~~~~
+In file included from ../src/PruebaMatrices.cpp:8:0:
+../src/PruebaMatrices.h:29:25: error: candidate is: template<class T> bool PruebaMatrices::esSingular(boost::numeric::ublas::matrix<T>)
+  template<class T> bool esSingular(pablo::matrix<T> matriz);
+                         ^~~~~~~~~~
+../src/PruebaMatrices.cpp: In function ‘int main()’:
+../src/PruebaMatrices.cpp:144:18: warning: unused variable ‘prueba’ [-Wunused-variable]
+  PruebaMatrices *prueba = new PruebaMatrices(matriz);
+                  ^~~~~~
+make: *** [src/PruebaMatrices.o] Error 1
+src/subdir.mk:21: recipe for target 'src/PruebaMatrices.o' failed
+16:42:22 **** Incremental Build of configuration Release for project Prueba ****
+make all 
+Building file: ../src/PruebaMatrices.cpp
+Invoking: Cross G++ Compiler
+g++ -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/PruebaMatrices.d" -MT"src/PruebaMatrices.o" -o "src/PruebaMatrices.o" "../src/PruebaMatrices.cpp"
+../src/PruebaMatrices.cpp: In function ‘int main()’:
+../src/PruebaMatrices.cpp:144:18: warning: unused variable ‘prueba’ [-Wunused-variable]
+  PruebaMatrices *prueba = new PruebaMatrices(matriz);
+                  ^~~~~~
+Finished building: ../src/PruebaMatrices.cpp
+ 
+Building target: Prueba
+Invoking: Cross G++ Linker
+g++  -o "Prueba"  ./src/Prueba.o ./src/PruebaMatrices.o   
+Finished building target: Prueba
+ 
+16:42:41 **** Incremental Build of configuration Release for project Prueba ****
+make all 
+make: Nothing to be done for 'all'.
+16:42:48 **** Incremental Build of configuration Release for project Prueba ****
+make all 
+Building file: ../src/PruebaMatrices.cpp
+Invoking: Cross G++ Compiler
+g++ -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/PruebaMatrices.d" -MT"src/PruebaMatrices.o" -o "src/PruebaMatrices.o" "../src/PruebaMatrices.cpp"
+../src/PruebaMatrices.cpp: In function ‘int main()’:
+../src/PruebaMatrices.cpp:144:18: warning: unused variable ‘prueba’ [-Wunused-variable]
+  PruebaMatrices *prueba = new PruebaMatrices(matriz);
+                  ^~~~~~
+Finished building: ../src/PruebaMatrices.cpp
+ 
+Building target: Prueba
+Invoking: Cross G++ Linker
+g++  -o "Prueba"  ./src/Prueba.o ./src/PruebaMatrices.o   
+Finished building target: Prueba
+ 
+16:42:55 **** Incremental Build of configuration Release for project Prueba ****
+make all 
+make: Nothing to be done for 'all'.
+16:43:06 **** Incremental Build of configuration Release for project Prueba ****
+make all 
+Building file: ../src/PruebaMatrices.cpp
+Invoking: Cross G++ Compiler
+g++ -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/PruebaMatrices.d" -MT"src/PruebaMatrices.o" -o "src/PruebaMatrices.o" "../src/PruebaMatrices.cpp"
+../src/PruebaMatrices.cpp: In function ‘int main()’:
+../src/PruebaMatrices.cpp:144:18: warning: unused variable ‘prueba’ [-Wunused-variable]
+  PruebaMatrices *prueba = new PruebaMatrices(matriz);
+                  ^~~~~~
+Finished building: ../src/PruebaMatrices.cpp
+ 
+Building target: Prueba
+Invoking: Cross G++ Linker
+g++  -o "Prueba"  ./src/Prueba.o ./src/PruebaMatrices.o   
+Finished building target: Prueba
+ 
+16:43:13 **** Incremental Build of configuration Release for project Prueba ****
+make all 
+make: Nothing to be done for 'all'.
+17:04:15 **** Incremental Build of configuration Release for project Prueba ****
+make all 
+Building file: ../src/PruebaMatrices.cpp
+Invoking: Cross G++ Compiler
+g++ -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/PruebaMatrices.d" -MT"src/PruebaMatrices.o" -o "src/PruebaMatrices.o" "../src/PruebaMatrices.cpp"
+../src/PruebaMatrices.cpp: In function ‘int main()’:
+../src/PruebaMatrices.cpp:144:18: warning: unused variable ‘prueba’ [-Wunused-variable]
+  PruebaMatrices *prueba = new PruebaMatrices(matriz);
+                  ^~~~~~
+Finished building: ../src/PruebaMatrices.cpp
+ 
+Building target: Prueba
+Invoking: Cross G++ Linker
+g++  -o "Prueba"  ./src/Prueba.o ./src/PruebaMatrices.o   
+Finished building target: Prueba
+ 
+17:04:26 **** Incremental Build of configuration Release for project Prueba ****
+make all 
+make: Nothing to be done for 'all'.
+17:05:30 **** Incremental Build of configuration Release for project Prueba ****
+make all 
+Building file: ../src/PruebaMatrices.cpp
+Invoking: Cross G++ Compiler
+g++ -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/PruebaMatrices.d" -MT"src/PruebaMatrices.o" -o "src/PruebaMatrices.o" "../src/PruebaMatrices.cpp"
+../src/PruebaMatrices.cpp: In function ‘int main()’:
+../src/PruebaMatrices.cpp:144:18: warning: unused variable ‘prueba’ [-Wunused-variable]
+  PruebaMatrices *prueba = new PruebaMatrices(matriz);
+                  ^~~~~~
+Finished building: ../src/PruebaMatrices.cpp
+ 
+Building target: Prueba
+Invoking: Cross G++ Linker
+g++  -o "Prueba"  ./src/Prueba.o ./src/PruebaMatrices.o   
+Finished building target: Prueba
+ 
+17:05:37 **** Incremental Build of configuration Release for project Prueba ****
+make all 
+make: Nothing to be done for 'all'.
+17:06:33 **** Incremental Build of configuration Release for project Prueba ****
+make all 
+Building file: ../src/PruebaMatrices.cpp
+Invoking: Cross G++ Compiler
+g++ -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/PruebaMatrices.d" -MT"src/PruebaMatrices.o" -o "src/PruebaMatrices.o" "../src/PruebaMatrices.cpp"
+../src/PruebaMatrices.cpp: In function ‘int main()’:
+../src/PruebaMatrices.cpp:144:18: warning: unused variable ‘prueba’ [-Wunused-variable]
+  PruebaMatrices *prueba = new PruebaMatrices(matriz);
+                  ^~~~~~
+Finished building: ../src/PruebaMatrices.cpp
+ 
+Building target: Prueba
+Invoking: Cross G++ Linker
+g++  -o "Prueba"  ./src/Prueba.o ./src/PruebaMatrices.o   
+Finished building target: Prueba
+ 
+17:06:39 **** Incremental Build of configuration Release for project Prueba ****
+make all 
+make: Nothing to be done for 'all'.

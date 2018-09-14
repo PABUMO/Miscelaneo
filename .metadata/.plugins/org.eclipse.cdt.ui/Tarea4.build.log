@@ -1,0 +1,19 @@
+16:32:11 **** Build of configuration Debug for project Tarea4 ****
+make all 
+Building file: ../src/PruebaMatrices.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/PruebaMatrices.d" -MT"src/PruebaMatrices.o" -o "src/PruebaMatrices.o" "../src/PruebaMatrices.cpp"
+../src/PruebaMatrices.cpp: In function ‘int main()’:
+../src/PruebaMatrices.cpp:37:18: warning: unused variable ‘prueba’ [-Wunused-variable]
+  PruebaMatrices *prueba = new PruebaMatrices(matriz1);
+                  ^~~~~~
+Finished building: ../src/PruebaMatrices.cpp
+ 
+Building target: Tarea4
+Invoking: Cross G++ Linker
+g++  -o "Tarea4"  ./src/PruebaMatrices.o   
+Finished building target: Tarea4
+ 
+
+16:32:19 Build Finished. 0 errors, 1 warnings. (took 7s.714ms)
+
